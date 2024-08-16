@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Landing Page Section -->
+    <section id="landing">
+        <img src="pfp.jpeg" alt="Your Name" id="profilePhoto">
+        <h1>Tejas Kumbhare</h1>
+        <p>Web Developer | Designer | Your Specialization</p>
+        
+        <div id="contactInfo">
+            <p>Email: <a href="mailto:tejaskumbhare18@gmail.com">tejaskumbhare18@gmail.com</a></p>
+            <p>Phone: <a href="tel:+91-8839874929">+91-8839874929</a></p>
+            <p>Location: Bhopal,MP,India</p>
+        </div>
+        
+        <div id="socialLinks">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=kBCrQMzpQDLQ&format=png&color=000000" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="icons/github.png" alt="GitHub">
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="Insta">
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Intrests</h2>
+        <p>I possess a keen passion for advancing my skills in web development, constantly seeking opportunities for growth in this area. Outside of my professional endeavors, I indulge in playing cricket, deriving both enjoyment and the chance to develop teamwork and strategic thinking. Moreover, I prioritize maintaining a healthy lifestyle and actively participate in fitness pursuits.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Cascading Style Stylesheet</li>
+            <li>C++</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="contactTableContainer">
+            <h3>Contact Submissions</h3>
+            <table id="contactTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Submissions will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+</body>
+</html>

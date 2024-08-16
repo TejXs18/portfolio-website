@@ -1,0 +1,264 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #34495e;
+    transition: background-color 0.3s ease;
+}
+
+/* Sections Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#landing {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+#profilePhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#profilePhoto:hover {
+    transform: scale(1.1);
+}
+
+#contactInfo {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#contactInfo p {
+    margin: 5px 0;
+}
+
+#contactInfo a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contactInfo a:hover {
+    color: #c0392b;
+}
+
+#socialLinks {
+    margin-top: 20px;
+}
+
+#socialLinks a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#socialLinks img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+#socialLinks a:hover img {
+    transform: scale(1.2);
+}
+
+
+#landing h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#landing p {
+    font-size: 1.2em;
+}
+
+#landing:hover {
+    background-color: #34495e;
+}
+
+/* About Section */
+#about h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Projects Section */
+#projects h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    list-style: none;
+}
+
+#projects li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #e74c3c;
+}
+
+/* Contact Section */
+#contact h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm input:focus, #contactForm textarea:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
+}
+
+#contactForm button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #c0392b;
+}
+
+#toggleTable {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#contactTableContainer {
+    display: none;
+    margin-top: 20px;
+    transition: max-height 0.3s ease;
+}
+
+#contactTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#contactTable th, #contactTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+#contactTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #contactForm, #contactTableContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #landing h1 {
+        font-size: 2.5em;
+    }
+
+    #landing p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+}
