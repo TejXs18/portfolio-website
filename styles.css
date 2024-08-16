@@ -280,7 +280,11 @@ section:hover {
     }
 }
 
-
+@media(max-width: 400px){
+    #landing p{
+        font-size: 1em;
+    }
+}
 
 @keyframes fadeIn {
     from {
