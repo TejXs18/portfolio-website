@@ -147,9 +147,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            // Updated regex: allow any emoji and must end with .com
+            const emailRegex = /^[\p{L}\p{N}\p{Emoji_Presentation}\p{Emoji}\p{Extended_Pictographic}._%+-]+@[\p{L}\p{N}\p{Emoji_Presentation}\p{Emoji}\p{Extended_Pictographic}.-]+\.com$/u;
             if (!emailRegex.test(email)) {
-                showNotification('Please enter a valid email address.', 'error');
+                showNotification('Please enter a valid email address (can include emojis, must end with .com).', 'error');
                 return;
             }
             
